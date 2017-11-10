@@ -6,11 +6,11 @@ HW30 -- Ye Olde Role Playing Game, Improved
 2017-11-10
 */
 public class Character {
-    //instance vars
-    public int health;
-    public int strength;
-    public int defense;
-    public double attackRating;
+    //instance vars, protected allows for subclasses to use them
+    protected int health;
+    protected int strength;
+    protected int defense;
+    protected double attackRating;
 
     public boolean isAlive() {return (health > 0);}
 
