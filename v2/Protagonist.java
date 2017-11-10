@@ -2,8 +2,8 @@
 Team Rollas
 Kevin Lin, Shruthi, John
 APCS pd8
-HW28 -- Ye Olde Role Playing Game
-2017-11-08
+HW30 -- Ye Olde Role Playing Game, Improved
+2017-11-10
 */
 public class Protagonist extends Character {
     //instance vars
