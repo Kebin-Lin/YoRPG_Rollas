@@ -22,6 +22,7 @@ public class YoRPG
   private int moveCount;
   private boolean gameOver;
   private int difficulty;
+  private int job;
 
   private InputStreamReader isr;
   private BufferedReader in;
@@ -75,7 +76,16 @@ public class YoRPG
     catch ( IOException e ) { }
 
     //instantiate the player's character
-    pat = new Protagonist( name );
+    s = "\nPlease state thy class: \n";
+    s += "1. Wizard\n";
+    System.out.print(s);
+    
+    
+    try {
+	job = Integer.parseInt( in.readLine() );
+	if (job == 1) {pat = new Wizard(name);}
+    }
+    catch (IOException e) { }
 
   }//end newGame()
 
