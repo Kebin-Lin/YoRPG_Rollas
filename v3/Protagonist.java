@@ -7,7 +7,7 @@ HW30 -- Ye Olde Role Playing Game, Improved
 */
 public class Protagonist extends Character {
     //instance vars
-    private String name;
+    protected String name;
     //constructor
     public Protagonist(String input) {
 	name = input;
