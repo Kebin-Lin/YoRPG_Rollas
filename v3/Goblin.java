@@ -6,4 +6,8 @@ public class Goblin extends Monster {
 	defense = 20;
 	attackRating = 1;
     }
+	
+    public static String about() {
+	return "A small creature, doesn't look like it has much HP.";
+    }
 }
