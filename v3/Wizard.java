@@ -17,4 +17,8 @@ public class Wizard extends Protagonist {
 	defense = 20;
 	strength = 20;
     }
+	
+    public static String about() {
+	return "A person who has spent their life studying magic. Their body may be weak, but their mind is strong.";    
+    }
 }
