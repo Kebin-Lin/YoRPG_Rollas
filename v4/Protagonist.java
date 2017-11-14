@@ -5,7 +5,7 @@ APCS pd8
 HW30 -- Ye Olde Role Playing Game, Improved
 2017-11-10
 */
-public class Protagonist extends Character {
+public abstract class Protagonist extends Character {
     //instance vars
     protected String name;
     //constructor
@@ -19,13 +19,9 @@ public class Protagonist extends Character {
 
     public String getName() {return name;}
 
-    public void specialize() {
-	defense = 35;
-	strength = 150;
-    }
+    public abstract void specialize();
 
-    public void normalize() {
-	defense = 40;
-	strength = 100;
-    }
+    public abstract void normalize();
+
+    public abstract String about();
 }
