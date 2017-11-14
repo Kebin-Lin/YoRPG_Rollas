@@ -77,13 +77,14 @@ public class YoRPG
 
     //instantiate the player's character
     s = "\nPlease state thy class: \n";
-    s += "1. Wizard\n";
+    s += "1. Wizard\n2. Elf\n";
     System.out.print(s);
     
     
     try {
 	job = Integer.parseInt( in.readLine() );
 	if (job == 1) {pat = new Wizard(name);}
+	else if (job == 2) {pat = new Elf(name);}
     }
     catch (IOException e) { }
 
