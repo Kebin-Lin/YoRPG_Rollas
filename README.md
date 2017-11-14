@@ -7,5 +7,9 @@ Template for monsters in the game
 Template for the protagonist in the game
 ### Wizard
 Subclass of Protagonist, lower health, higher damage
+### Elf
+Subclass of Protagonist, higher defense, slightly higher health
 ### Goblin
 Subclass of Monster, lower health, slightly higher damage
+### Dragon
+Subclass of Monster, high health, low defense
