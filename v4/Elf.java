@@ -18,7 +18,7 @@ public class Elf extends Protagonist {
 	strength = 70;
     }
 	
-    public static String about() {
+    public String about() {
 	return "Stealthy majestic folk with sharp ears and a sharp bow. (Almost) nothing hurts them";
     }
 }

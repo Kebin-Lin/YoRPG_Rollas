@@ -18,7 +18,7 @@ public class Assassin extends Protagonist {
 	strength = 125;
     }
 	
-    public static String about() {
+    public String about() {
 	return "A being that lurks in the shadows waiting patiently for his opportunity. He is deadly but one good hit should do him in.";    
     }
 }
