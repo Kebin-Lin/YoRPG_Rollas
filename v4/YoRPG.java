@@ -78,7 +78,7 @@ public class YoRPG
     //instantiate the player's character
     s = "\nPlease state thy class: \n";
     s += "1. Wizard\n2. Elf\n";
-    s += "\n3. Assassin\n";
+    s += "3. Assassin\n";
     System.out.print(s);
     
     
