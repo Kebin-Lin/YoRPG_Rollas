@@ -1,4 +1,10 @@
 # YoRPG_Rollas
+### Group Contributors
+Shruthi Venkata, Kevin Lin, John Liu
+### To Do
+- Fix damage calculation so you can't take negative damage
+- Add special passives (Life Steal for Wizard [Kevin], Dodging for Assassian [John], Critical hit for Elf [Shruthi])
+- Add abstract method for passives for Protagonist
 ### Character
 Basic template for characters in the game
 ### Monster
