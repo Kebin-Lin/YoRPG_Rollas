@@ -18,14 +18,9 @@ public class Character {
 
     public void lowerHP(int dmg) {health -= dmg;}
 
-    public int attack(Monster target) {
+    public int attack(Character target) {
 	int dmg = (int) (strength * attackRating) - target.getDefense();
-	target.lowerHP(dmg);
-	return dmg;
-    }
-
-    public int attack(Protagonist target) {
-	int dmg = (int) (strength * attackRating) - target.getDefense();
+	if (dmg < 0) {dmg = 0;}
 	target.lowerHP(dmg);
 	return dmg;
     }
