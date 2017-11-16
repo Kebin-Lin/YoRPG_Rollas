@@ -1,6 +1,10 @@
 # YoRPG_Rollas
 ### Group Contributors
 Shruthi Venkata, Kevin Lin, John Liu
+
+### How To Play
+Follow the prompts within your terminal. Select your protagonist type, submit your name, and choose whether to deal monsters a blow. If you lose all your strength, you die.
+
 ### To Do
 - Fix damage calculation so you can't take negative damage
 - Add special passives (Life Steal for Wizard [Kevin], Dodging for Assassian [John], Critical hit for Elf [Shruthi])
