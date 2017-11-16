@@ -21,8 +21,4 @@ public class Elf extends Protagonist {
     public String about() {
 	return "Stealthy majestic folk with sharp ears and a sharp bow. (Almost) nothing hurts them";
     }
-
-    public void passive() { //Critical Hit
-
-    }
 }
