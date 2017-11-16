@@ -127,9 +127,10 @@ public class YoRPG
           pat.specialize();
         else
           pat.normalize();
-        pat.passive();
 
-        d1 = pat.attack( smaug );
+		
+		if ((job==2) && (Math.random()>.5)) d1 = pat.passive(smaug);
+		else d1 = pat.attack( smaug );
         d2 = smaug.attack( pat );
 
 

@@ -24,4 +24,12 @@ public class Character {
 	target.lowerHP(dmg);
 	return dmg;
     }
+	
+	//only for Elfs
+	public int passive(Character target) {
+	int dmg = (int) (strength * attackRating*2) - target.getDefense();
+	if (dmg < 0) {dmg = 0;}
+	target.lowerHP(dmg);
+	return dmg;
+    }
 }
