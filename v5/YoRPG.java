@@ -45,8 +45,8 @@ public class YoRPG
 
   /*=============================================
     void newGame() -- gathers info to begin a new game
-    pre:  
-    post: according to user input, modifies instance var for difficulty 
+    pre:
+    post: according to user input, modifies instance var for difficulty
     and instantiates a Protagonist
     =============================================*/
   public void newGame()
@@ -80,8 +80,8 @@ public class YoRPG
     s += "1. Wizard\n2. Elf\n";
     s += "3. Assassin\n";
     System.out.print(s);
-    
-    
+
+
     try {
 	job = Integer.parseInt( in.readLine() );
 	if (job == 1) {pat = new Wizard(name);}
@@ -127,9 +127,11 @@ public class YoRPG
           pat.specialize();
         else
           pat.normalize();
+        pat.passive();
 
         d1 = pat.attack( smaug );
         d2 = smaug.attack( pat );
+
 
         System.out.println( "\n" + pat.getName() + " dealt " + d1 +
                             " points of damage.");
@@ -140,7 +142,7 @@ public class YoRPG
 
 	    //option 1: you & the monster perish
 	    if ( !smaug.isAlive() && !pat.isAlive() ) {
-        System.out.println( "'Twas an epic battle, to be sure... " + 
+        System.out.println( "'Twas an epic battle, to be sure... " +
                             "You cut ye olde monster down, but " +
                             "with its dying breath ye olde monster. " +
                             "laid a fatal blow upon thy skull." );
@@ -165,7 +167,7 @@ public class YoRPG
 
   public static void main( String[] args )
   {
-    //As usual, move the begin-comment bar down as you progressively 
+    //As usual, move the begin-comment bar down as you progressively
     //test each new bit of functionality...
 
 
@@ -187,5 +189,3 @@ public class YoRPG
   }//end main
 
 }//end class YoRPG
-
-

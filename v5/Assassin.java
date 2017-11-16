@@ -7,7 +7,7 @@ public class Assassin extends Protagonist {
 	defense = 5;
 	attackRating = 2;
     }
-    
+
     public void specialize() {
 	defense = 0;
 	strength = 175;
@@ -17,8 +17,12 @@ public class Assassin extends Protagonist {
 	defense = 5;
 	strength = 125;
     }
-	
+
     public String about() {
-	return "A being that lurks in the shadows waiting patiently for his opportunity. He is deadly but one good hit should do him in.";    
+	return "A being that lurks in the shadows waiting patiently for his opportunity. He is deadly but one good hit should do him in.";
+    }
+
+    public void passive() { //Dodge
+      
     }
 }
