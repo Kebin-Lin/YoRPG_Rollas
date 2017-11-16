@@ -22,7 +22,10 @@ public class Assassin extends Protagonist {
 	return "A being that lurks in the shadows waiting patiently for his opportunity. He is deadly but one good hit should do him in.";
     }
 
-    public void passive() { //Dodge
-      
+   public void passive() { //Dodge
+	if (Math.random()>.5){
+	    System.out.println("\nYou will dodge the attack this turn!!");
+	    defense+=1000;
+	}
     }
 }
